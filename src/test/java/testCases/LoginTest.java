@@ -1,26 +1,34 @@
 package testCases;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.homePage;
 import pages.loginPage;
 
 public class LoginTest{
 	  private WebDriver driver;
+	  public String url= "https://www.amazon.in/";
 
-	    @BeforeClass
+	    @BeforeSuite
 	    public void setUp() {
-	       // System.setProperty("webdriver.chrome.driver", "path/to/chromedriver.exe");
-	    	WebDriverManager.chromedriver().setup();
+	        System.setProperty("webdriver.chrome.driver", "C:\\Users\\akashverma02\\eclipse-workspace\\freeStyle.assignment\\drivers\\chromedriver.exe");
 	        driver = new ChromeDriver();
+	        driver.manage().window().maximize();
+			
+			driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(1));
+			
+			//WebDriver
+			System.out.println("Setup Successful");
+			driver.get(url);
+			System.out.println("Successfully nevigated to url");
 	    }
 
 	    @DataProvider(name="usertestdata")
@@ -50,7 +58,7 @@ public class LoginTest{
 	       
 	    }
 
-	    @AfterClass
+	    @AfterSuite
 	    public void tearDown() {
 	        if (driver != null) {
 	            driver.quit();
