@@ -1,36 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-13T12:11:12 IST" name="Default suite" finished-at="2024-02-13T12:11:30 IST" duration-ms="17262">
+  <suite started-at="2024-02-14T07:55:12 IST" name="Default suite" finished-at="2024-02-14T07:55:12 IST" duration-ms="48">
     <groups>
     </groups>
-    <test started-at="2024-02-13T12:11:12 IST" name="Default test" finished-at="2024-02-13T12:11:30 IST" duration-ms="17262">
+    <test started-at="2024-02-14T07:55:12 IST" name="Default test" finished-at="2024-02-14T07:55:12 IST" duration-ms="48">
       <class name="testCases.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.LoginTest@22ef9844]" started-at="2024-02-13T12:11:07 IST" name="setUp" finished-at="2024-02-13T12:11:12 IST" duration-ms="4997" status="PASS">
+        <test-method signature="test1()[pri:0, instance:testCases.LoginTest@1e6454ec]" started-at="2024-02-14T07:55:12 IST" name="test1" finished-at="2024-02-14T07:55:12 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:testCases.LoginTest@22ef9844]" started-at="2024-02-13T12:11:12 IST" name="login" data-provider="usertestdata" finished-at="2024-02-13T12:11:30 IST" duration-ms="17241" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[akashv5482@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[akashchakia]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:0, instance:testCases.LoginTest@1e6454ec]" started-at="2024-02-14T07:55:12 IST" name="test2" finished-at="2024-02-14T07:55:12 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginTest@22ef9844]" started-at="2024-02-13T12:11:30 IST" name="tearDown" finished-at="2024-02-13T12:11:31 IST" duration-ms="957" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
+        </test-method> <!-- test2 -->
       </class> <!-- testCases.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
